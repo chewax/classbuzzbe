@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Error Log</title>
+<link href="lib/templates/styles.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body itemscope itemtype="http://schema.org/EmailMessage">
+
+    <div class="content" style="min-width: 800px !important;">
+				<table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction">
+					<tr>
+						<td class="content-wrap">
+							<meta itemprop="name" content="Confirm Email"/>
+							<table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="content-block aligncenter">
+                                        <div class="logo-wrapper">
+                                            <img class = "mail-logo" src="https://s3-sa-east-1.amazonaws.com/pyromancer.co.gg.images/logos/cblogoweb.png">
+                                        </div>
+                                    
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><p><strong>Class Buzz Error Log: <a href="{{err_link}}">(...)</a></strong></p></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content-block">
+                                        <div class="datagrid errorLog">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Logged User:</th>
+                                                        <td>{{err_logged_user}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Status:</th>
+                                                        <td>{{err_status}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Timestamp:</th>
+                                                        <td>{{err_timestamp}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Reason:</th>
+                                                        <td>{{err_reason}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Origin:</th>
+                                                        <td>{{err_from}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Additional Info:</th>
+                                                        <td class="truncate">{{err_other_info}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Stack Trace:</th>
+                                                        <td>
+                                                            {{err_stack_trace}}
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+									<td class="content-block">
+										&mdash; El equipo de Class Buzz
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<div class="footer">
+					<table width="100%">
+						<tr>
+							<td class="aligncenter content-block">Follow <a href="http://twitter.com/class_buzz">@class_buzz</a> on Twitter.</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+</body>
+</html>

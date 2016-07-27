@@ -1,0 +1,31 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Login - Griffin Gamification
+        include snippets/stylesheets.jade
+
+    body(class="grey-bg")
+        div(class="middle-box text-center loginscreen animated fadeInDown")
+            div
+                div
+                    h1(class="logo-name") G+
+
+                h3 Welcome to Griffin Gamification
+                p Please, login to continue to the dashboard
+                //action="/api/v1/authenticate" method="post"
+                form(id="loginForm" class="m-t" role="form")
+                    div(class="form-group")
+                        input(id="username" type="username" class="form-control" placeholder="Username" required)
+                    div(class="form-group")
+                        input(id="password" type="password" class="form-control" placeholder="Password" required)
+                    button(type="submit" class="btn btn-primary block full-width m-b") Login
+                    a(href="/api/v1/credentials/recovery")
+                        small Forgot Password?
+
+        <!-- SCRIPTS -->
+        script(src='/js/jquery-2.1.1.js')
+        script(src='/js/bootstrap.min.js')
+        script(src='/js/loginUtils.js')
+

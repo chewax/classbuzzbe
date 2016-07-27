@@ -1,0 +1,24 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title} - Class Buzz
+        include snippets/stylesheets.jade
+
+        body
+            div(id="wrapper")
+                nav(class="navbar-default navbar-static-side" role="navigation")
+                    include snippets/sideMenu.jade
+
+                div(id="page-wrapper" class="gray-bg" style="minHeight: 895px;")
+                    include  snippets/navbarStatic.jade
+
+                    div(class="wrapper wrapper-content")
+                        block content
+
+                    div(class="footer")
+                        include  snippets/footer.jade
+
+            <!-- SCRIPTS -->
+            include snippets/scripts.jade

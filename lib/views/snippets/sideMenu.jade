@@ -1,0 +1,24 @@
+div(class="sidebar-collapse")
+    ul(class="nav matismenu" id="side-menu" style="display: block;")
+        li(class="nav-header")
+            div(class="dropdown profile-element")
+                span
+                    - if (locals.avatarURL)
+                        img(alt="image" class="img-circle" style="max-width: 55px;" src="#{avatarURL}")
+                    - else
+                        img(alt="image" class="img-circle" style="max-width: 55px;" src="/images/avatars/empty.png")
+
+
+
+                a(data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false")
+                    span(class="clear")
+                        span(class="block m-t-xs")
+
+                            - if (locals.firstName && locals.lastName)
+                                strong(class="font-bold") #{firstName} #{lastName}
+                            - else
+                                strong(class="font-bold") Hi stranger
+
+                            span(class="text-muted text-x block") #{email}
+
+

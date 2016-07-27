@@ -1,0 +1,45 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title} - Class Buzz Error
+        link(rel='stylesheet', href='/css/error.css')
+    body
+        div(class="content" style="min-width: 1300px !important;")
+            table(class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction")
+                tr
+                    td(class="content-wrap")
+                        table(class="main")
+                            tr
+                                td(class="content-block aligncenter")
+                                    img(class="mail-logo" src="http://ec2-54-94-155-99.sa-east-1.compute.amazonaws.com:8000/images/cblogo.png")
+
+                            tr
+                                td(class="content-block")
+                                    div(class="datagrid errorLog")
+                                        table
+                                            thead
+                                                tr
+                                                    th Status:
+                                                    td #{status}
+                                                tr
+                                                    th Logged User:
+                                                    td #{user}
+                                                tr
+                                                    th Origin:
+                                                    td #{origin}
+                                                tr
+                                                    th Message:
+                                                    td #{message}
+                                                tr
+                                                    th Reason:
+                                                    td #{reason}
+                                                tr
+                                                    th Timestamp:
+                                                    td #{timestamp}
+                                                tr
+                                                    th Stack:
+                                                    td #{stack}
+
+    include snippets/scripts.jade

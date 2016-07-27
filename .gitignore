@@ -1,0 +1,10 @@
+#modules
+uploads
+/node_modules
+/lib/public/uploads/*
+.idea
+
+#logs
+*.log
+.env
+#/lib/config.js
