@@ -22,7 +22,7 @@
     "express": "^4.13.3",
     "express-jwt": "^3.0.1",
     "jsonwebtoken": "^5.0.5",
-    "lodash": "^4.14.0",
+    "lodash": "^4.14.2",
     "log4js": "^0.6.26",
     "mailgun-js": "^0.7.7",
     "mailplate.js": "git+https://github.com/chewax/mailplate.js.git",

@@ -1,7 +1,8 @@
 #modules
-uploads
+/uploads
 /node_modules
 /lib/public/uploads/*
+/datasets
 .idea
 
 #logs
