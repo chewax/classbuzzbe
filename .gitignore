@@ -2,6 +2,8 @@
 /uploads
 /node_modules
 /lib/public/uploads/*
+/lib/public/tmp/
+/lib/public/tmp/*
 /datasets
 .idea
 
