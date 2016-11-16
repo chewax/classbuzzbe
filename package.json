@@ -26,21 +26,26 @@
     "log4js": "^0.6.26",
     "mailgun-js": "^0.7.7",
     "mailplate.js": "git+https://github.com/chewax/mailplate.js.git",
-    "mocha": "^3.1.2",
     "moment": "^2.10.6",
     "moment-timezone": "^0.5.3",
     "mongoose": "^4.6.1",
     "mongoose-deep-populate": "^2.0.1",
     "mongoose-paginate": "^4.2.0",
     "mongoose-simple-random": "^0.3.3",
+    "morgan": "^1.7.0",
     "multer": "^1.1.0",
     "node-schedule": "^0.6.0",
     "nodemailer": "^1.4.0",
     "phantom-html2pdf": "^3.0.0",
     "serve-favicon": "^2.3.0",
-    "should": "^11.1.1",
     "socket.io": "^1.4.5",
-    "socket.io-client": "^1.5.1",
     "underscore": "^  1.8.3"
+  },
+  "devDependencies": {
+    "socket.io-client": "^1.5.1",
+    "should": "^11.1.1",
+    "mocha": "^3.1.2",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0"
   }
 }
