@@ -11,12 +11,14 @@
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
+    margin-bottom: 30px;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
+    background-image: url("https://s3-sa-east-1.amazonaws.com/pyromancer.co.gg.images/backgrounds/background_honey_shadow.svg");
     width: 100% !important;
     height: 100%;
     line-height: 1.6em;
@@ -24,7 +26,7 @@ body {
     /*line-height: 22px;*/
 }
 
-/* Let's make sure all tables have defaults */
+/* Lets make sure all tables have defaults */
 table td {
     vertical-align: top;
 }
@@ -33,12 +35,18 @@ table td {
     BODY & CONTAINER
 ------------------------------------- */
 body {
-    background-color: #f6f6f6;
+/*    background-color: #f6f6f6;*/
+    background-color: rgb(32,33,69);
+    background-size: contain;
+    background-position: bottom center;
 }
 
 .body-wrap {
-    background-color: #f6f6f6;
+    background-color: rgba(246, 246, 246, 0);
     width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .container {
@@ -62,7 +70,9 @@ body {
 .main {
     background-color: #fff;
     border: 1px solid #e9e9e9;
-    border-radius: 3px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .content-wrap {
@@ -133,6 +143,11 @@ p, ul, ol {
 p li, ul li, ol li {
     margin-left: 5px;
     list-style-position: inside;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 500; 
 }
 
 /* -------------------------------------
@@ -297,11 +312,11 @@ a {
 }
 
 .mail-logo {
-    max-height: 250px;
+    max-height: 180px;
 }
 
 .customer-logo {
-    max-height: 100px;
+    max-height: 75px;
     position: absolute;
     right: 10px
 }
@@ -392,5 +407,91 @@ a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.more-info {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.store-badge {
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+}
+
+#progress-wrapper {
+    position: relative;
+    width:  100%;
+    margin-bottom: 35px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #EDEDED;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#progress-bar #progress { 
+    display: block;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    transition: width 1s linear;
+}
+
+#progress-bar #progress.use_of_english {
+    background-color: #7fe68b;
+}
+
+#progress-bar #progress.reading {
+    background-color: #fad34f;
+}
+
+#progress-bar #progress.writing {
+    background-color: #3eccef;
+}
+
+#progress-bar #progress.listening {
+    background-color: #7a50f0;
+}
+
+#progress-bar #progress.speaking {
+    background-color: #b330f8;
+}
+
+#progress-bar #progress.behaviour {
+    background-color: #f04688;
+}
+
+#progress-bar #pj { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color: rgb(255,255,255);
+    font-weight: 500;
+    font-size: 9px;
+}
+
+#progress-wrapper #caption { 
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align:center;
+    color: rgb(8, 0, 0);
+    font-weight: 700;
+    font-size: 9px;
 }
 /*# sourceMappingURL=styles.css.map */
