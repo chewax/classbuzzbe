@@ -40,6 +40,7 @@
     "phantom-html2pdf": "^3.0.0",
     "serve-favicon": "^2.3.0",
     "socket.io": "^1.4.5",
+    "styliner": "^1.0.3",
     "underscore": "^  1.8.3"
   },
   "devDependencies": {
