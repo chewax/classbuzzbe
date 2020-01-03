@@ -29,7 +29,7 @@
     "mailplate.js": "git+https://github.com/chewax/mailplate.js.git",
     "moment": "^2.10.6",
     "moment-timezone": "^0.5.3",
-    "mongoose": "^4.6.1",
+    "mongoose": "^5.8.4",
     "mongoose-deep-populate": "^2.0.1",
     "mongoose-paginate": "^4.2.0",
     "mongoose-simple-random": "^0.3.3",
